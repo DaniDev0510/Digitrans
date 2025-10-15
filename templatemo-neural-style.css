@@ -8,6 +8,30 @@ https://templatemo.com/tm-597-neural-glass
 
 
 @charset "utf-8";
+
+
+
+
+
+
+.feature-icon {
+     margin: 0 auto; 
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.feature-icon .icon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain; /* garde les proportions de l’image */
+}
+
 /* CSS Document */
  * {
      margin: 0;
@@ -585,7 +609,7 @@ https://templatemo.com/tm-597-neural-glass
      justify-content: center;
      flex-wrap: wrap;
      opacity: 0;
-     animation: buttonSlideUp 1.2s ease 1.5s forwards;
+     animation: buttonSlideUp ¨ease 1.5s forwards;
 }
  @keyframes buttonSlideUp {
      from {
