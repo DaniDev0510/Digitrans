@@ -32,6 +32,30 @@ https://templatemo.com/tm-597-neural-glass
   object-fit: contain; /* garde les proportions de l’image */
 }
 
+
+
+
+
+
+
+.feature-icon {
+     margin: 0 auto; 
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.feature-icon .icon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain; /* garde les proportions de l’image */
+}
+
 /* CSS Document */
  * {
      margin: 0;
@@ -609,7 +633,7 @@ https://templatemo.com/tm-597-neural-glass
      justify-content: center;
      flex-wrap: wrap;
      opacity: 0;
-     animation: buttonSlideUp ¨ease 1.5s forwards;
+     animation: buttonSlideUp 1.2s ease 1.5s forwards;
 }
  @keyframes buttonSlideUp {
      from {
@@ -1296,4 +1320,52 @@ https://templatemo.com/tm-597-neural-glass
  ::-webkit-scrollbar-thumb:hover {
      background: linear-gradient(45deg, #ff0080, #8000ff);
      box-shadow: 0 0 15px rgba(255, 0, 128, 0.7);
+}
+
+
+
+/* personnaliser*/
+/* Ajoutez ceci à templatemo-neural-style.css ou dans <style> */
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.carousel-arrow {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: background 0.2s;
+}
+.carousel-arrow:hover {
+  background: rgba(255,255,255,0.4);
+}
+.carousel-images {
+  width: 180px;
+  height: 120px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  background: #222;
+  display: flex;
+}
+.carousel-images img {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s;
+  position: absolute;
+  left: 0; top: 0;
+}
+.carousel-images img.active {
+  display: block;
+  position: relative;
 }
