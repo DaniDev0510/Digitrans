@@ -190,9 +190,7 @@ https://templatemo.com/tm-597-neural-glass
         });
 
         
-
-
-        // ...existing code...
+// ...existing code...
 document.querySelectorAll('.carousel').forEach(function(carousel) {
   const images = carousel.querySelectorAll('.carousel-images img');
   let current = 0;
